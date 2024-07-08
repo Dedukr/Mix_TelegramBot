@@ -13,7 +13,7 @@ from config import *
 
 
 def weather(city):
-    owm = OWM('491d0fe6e9c1eed077ebf40bdbcca1b3')
+    owm=OWM(owm)
     mgr = owm.weather_manager()
     w = mgr.weather_at_place(city).weather
     return w
